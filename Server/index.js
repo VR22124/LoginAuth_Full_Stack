@@ -7,7 +7,7 @@ const EmployeeModel = require("./models/Employee.js");
 const app = express();
 app.use(express.json());
 app.use(cors());
-mongoose.connect("mongodb://127.0.0.1:27017/employee");
+mongoose.connect("mongodb://localhost:27017/Employee");
 
 // Hashing function
 const saltRounds = 10; // Number of salt rounds for bcrypt
